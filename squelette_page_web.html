@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Commentaire => pomme+shift+slash -->
+<!-- Dupliquer ligne - Option + shift + flèce bas -->
+<!-- Sélection multiple : Pomme enfonce + lettre autant de fois -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours HTML_V2</title>
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+  <body>
+
+    <!-- Header   -->
+    <header>
+      <!-- Intégrer icones html natif devant titre-->
+      <h1> <span>&#9918 &#9992;</span> Texte - titre h1</h1>
+      <p>
+        Texte basique. <em>Voici un texte en italique</em>.
+        <strong>Et un texte en gras</strong>.
+        <span>l'élément en span ne revient pas à la ligne</span>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
+        illo!
+      </p>
+    </header>
+    
+    <!-- Section -->
+    <section>
+      <div>
+        <!-- Intégrer photos -->
+        <h2>Photos - Titre H2</h2>
+        <img src="Photo_paysage.jpeg" alt="image-paysage" height="200" />
+      </div>
+      <div>
+        <!-- Intégrer liste non ordonnée -->
+        <h3>Listes - Titre h3</h3>
+        <li>UL = Unoredered List</li>
+        <li>UL = Unoredered List</li>
+        <li>UL = Unoredered List</li>
+        <ul>
+          <li>UL = Unoredered List</li>
+          <li>UL = Unoredered List</li>
+          <li>UL = Unoredered List</li>
+        </ul>
+        <!-- Intégrer liste ordonnée -->
+        <ol>
+          <li>UL = Ordered List</li>
+          <li>UL = Ordered List</li>
+          <li>UL = Ordered List</li>
+        </ol>
+      </div>
+      <div>
+        <!-- Intégrer un Tableau -->
+        <h4>Tableaux - Titre h4</h4>
+        <table border="1" width="50%">
+          <caption>
+            Populations d'europe
+          </caption>
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66 Millions</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82 Millions</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47 Millions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <!-- Intégrer des liens -->
+        <h5>Liens - Titre h5</h5>
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a>
+        <br />
+        <a href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Icones en html</a>
+      </div>
+      <div>
+        <h6>Vidéo - Titre h6</h6>
+        <video src="Sea - 4006.mp4" height="200" autoplay loop muted></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulaire -->
+    <section>
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="post">
+        <label for="name">Nom </label> <input id="name" type="text" placeholder="Entrez votre nom"><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" min="0" max="99" step="1" value="18"><br>
+
+        <!-- Input select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option selected value="femme">Femme</option>
+        </select><br>
+
+          <!-- Input radio -->
+          <div>
+            <input type="radio" name="type" id="human">
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="human" checked>
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="human">
+            <label for="cat">Chat</label>
+          </div><br>
+
+          <textarea cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea><br>
+
+          <!-- Input Checkbox -->
+          <label><input type="checkbox"/>Accepter les CGV</label><br>
+
+          <!-- Input Submit envoie tut ce qui se trouve dans formulaire-->
+          <input type="submit" value="Valider"> 
+      </form>
+    </section>
+    <br>
+
+    <!-- iframe -->
+    <div>
+      <iframe id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="300"
+        height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+      </iframe>
+    <br>
+    </div>
+
+
+    <!-- Mail et envoie de fichier -->
+    <footer>
+      <a href="mailto:bambathiam88@gmail.com">Ecrivez-moi</a>
+      <br>
+      <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi odit totam recusandae eveniet sed, hic repellendus ducimus id tenetur facilis veritatis pariatur culpa minus assumenda voluptatum quas accusantium aperiam?</p>
+    </footer>
+
+  </body>
+</html>
